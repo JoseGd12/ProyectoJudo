@@ -1,0 +1,95 @@
+.carousel-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Ajustes específicos para react-bootstrap */
+.carousel-inner {
+  padding: 20px 0;
+}
+
+.carousel-item {
+  padding: 0 10px;
+  transition: transform 0.5s ease;
+}
+
+/* Controles del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(40, 40, 103, 0.8);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: -20px;
+}
+
+.carousel-control-next {
+  right: -20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Indicadores */
+.carousel-indicators {
+  bottom: -30px;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: rgba(40, 40, 103, 0.5);
+  border: none;
+}
+
+.carousel-indicators button.active {
+  background-color: #282867;
+}
+
+.belt-carousel-section {
+  background: linear-gradient(135deg, #3a4a8f 0%, #2a3a7f 100%);
+  border-radius: 15px;
+  padding: 30px 20px;
+  margin: 30px auto;
+  max-width: 1200px;
+  box-shadow: 0 8px 25px rgba(42, 58, 127, 0.3);
+}
+
+.belt-carousel-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.belt-carousel-header h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.belt-carousel-header h4 {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.belt-carousel-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}

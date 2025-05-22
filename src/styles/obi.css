@@ -1,0 +1,42 @@
+.obi-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #3a4a8f 0%, #2a3a7f 100%);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(42, 58, 127, 0.3);
+  margin: 2rem auto;
+  max-width: 1200px;
+  text-align: justify;
+}
+
+.obi-h3{
+  text-align: center;
+}
+.obi-content {
+  width: 80%;
+  text-align: justify;
+  color: white;
+  padding: 2rem;
+}
+
+.obi-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.obi-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.gradient-bar {
+  height: 4px;
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 2px;
+}
