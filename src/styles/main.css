@@ -252,35 +252,18 @@ button:active {
     text-align: center;
     
 }
-.sectionparrafos h3{
-    color: black;
-    margin-top: 2%;
-    font-family:monospace;
-    font-size: 30px;
-    
-    padding: 1%;
-    
+
+
+
+.separation2 {
+  height: 4px;
+  background: linear-gradient(90deg, #7979e3 0%, #3a4a8f 50%, #7979e3 100%); /*#59599b*/
+  width: 93%;
+  margin: 0 auto;
+  margin-bottom: 4%;
+  border-radius: 2px;
 }
 
-
-
-
-.sectionniveles{
-    text-align: center;
-    width: 42.6%;
-    background: rgba(166, 165, 197, 0);
-    margin-left: 29%;
-    
-    margin-top: 1%;
-    float: left;
-    padding: 1%;
-}
-
-
-.sectionniveles h3{
-    padding: 1%;
-    text-align: center;
-}
 
 .p{
     color: black;

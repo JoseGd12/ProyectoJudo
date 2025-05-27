@@ -1,0 +1,130 @@
+.form-section {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #3a4a8f;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: white;
+}
+
+.form-section h3{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    
+}
+.form-section label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.5rem;
+    display: block;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.form-section input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #bfdbfe;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: rgb(47, 47, 47);
+    transition: all 0.3s ease;
+    background-color: #f0f9ff;
+}
+
+.form-section input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    background-color: #ffffff;
+}
+
+.form-section input::placeholder {
+    color: #93c5fd;
+    opacity: 0.7;
+}
+
+
+.form-section label:after {
+    content: " *";
+    color: #ef4444;
+}
+
+.error {
+    border-color: #ef4444 !important;
+    background-color: #fee2e2 !important;
+}
+
+.error-message {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+
+
+.h3 {
+  color: #1e3a8a;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.submit-btn {
+ background-color: #4e4edf;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+.submit-btn:hover {
+  background-color: #4055b1;
+}
+
+.submit-btn.disabled {
+  background-color: #bfdbfe;
+  cursor: not-allowed;
+}
+
+.clear-btn {
+  background-color: #f8fafc;
+  color: #3b82f6;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #bfdbfe;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+.clear-btn:hover {
+  background-color: #f0f9ff;
+}
+
+
+ 

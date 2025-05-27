@@ -7,6 +7,7 @@
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(42, 58, 127, 0.3);
   margin: 2rem auto;
+  margin-top: 4rem;
   max-width: 1200px;
   text-align: justify;
 }
@@ -35,7 +36,7 @@
 
 .gradient-bar {
   height: 4px;
-  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  background: linear-gradient(90deg, #3a4a8f 0%, #7979e3 50%, #3a4a8f 100%); /*#59599b*/
   width: 50%;
   margin: 0 auto;
   border-radius: 2px;

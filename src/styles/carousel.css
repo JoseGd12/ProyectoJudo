@@ -5,7 +5,7 @@
   padding: 0 20px;
 }
 
-/* Ajustes específicos para react-bootstrap */
+
 .carousel-inner {
   padding: 20px 0;
 }
@@ -15,7 +15,7 @@
   transition: transform 0.5s ease;
 }
 
-/* Controles del carrusel */
+
 .carousel-control-prev,
 .carousel-control-next {
   width: 40px;
@@ -41,7 +41,7 @@
   height: 20px;
 }
 
-/* Indicadores */
+
 .carousel-indicators {
   bottom: -30px;
 }
@@ -62,7 +62,7 @@
 .belt-carousel-section {
   background: linear-gradient(135deg, #3a4a8f 0%, #2a3a7f 100%);
   border-radius: 15px;
-  padding: 30px 20px;
+  padding: 45px 100px;
   margin: 30px auto;
   max-width: 1200px;
   box-shadow: 0 8px 25px rgba(42, 58, 127, 0.3);

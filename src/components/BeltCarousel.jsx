@@ -7,8 +7,8 @@ const BeltCarousel = () => {
   return (
     <div className="belt-carousel-section">
       <div className="belt-carousel-header">
-        <h3>CLASIFICACIÓN</h3>
-        <h4><i>Kyū:</i></h4>
+        <h3><b>CLASIFICACIÓN</b></h3>
+        <h4><i><b>Kyū:</b></i></h4>
         <p>Los kyū son los cinturones de los judocas principiantes.</p>
       </div>
 
