@@ -3,12 +3,15 @@ import ObiSection from "./components/ObiSection";
 import BeltCarousel from "./components/BeltCarousel";
 import Footer from "./components/Footer";
 import { Form } from "./components/form"
+import { ProductProvider } from './context/ProductContext';
+import InformacionProductos from './components/InformacionProductos';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './styles/main.css';
-import './styles/cards.css'
-import './styles/obi.css'
+import './styles/cards.css';
+import './styles/obi.css';
 import './styles/carousel.css';
 import './styles/form.css';
+import './styles/judoProducts.css';
 import './styles/footer.css';
 
 
@@ -32,6 +35,12 @@ function App() {
       <div className="separation2"/>
 
       <Form />
+      <br />
+      <div className="separation2"/>
+
+      <ProductProvider>
+        <InformacionProductos />
+      </ProductProvider>
       
       <Footer />
     </div>
