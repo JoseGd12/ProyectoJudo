@@ -1,49 +1,55 @@
-import Header from "./components/Header";
-import ObiSection from "./components/ObiSection";
-import BeltCarousel from "./components/BeltCarousel";
-import Footer from "./components/Footer";
-import { Form } from "./components/form"
-import { ProductProvider } from './context/ProductContext';
-import InformacionProductos from './components/InformacionProductos';
+import Header from "./shared/components/Header";
+import ObiSection from "./features/landing/components/ObiSection";
+import BeltCarousel from "./features/landing/components/BeltCarousel";
+import Footer from "./shared/components/Footer";
+import { Form } from "./features/landing/components/form"
+import { ProductProvider } from './shared/contexts/ProductContext';
+import InformacionProductos from './features/landing/components/InformacionProductos';
+import { CartProvider } from './features/cart/hooks/CartContext'
+import { Cart } from './features/cart/components/Cart'
 import "bootstrap/dist/css/bootstrap.min.css";
-import './styles/main.css';
-import './styles/cards.css';
-import './styles/obi.css';
-import './styles/carousel.css';
-import './styles/form.css';
-import './styles/judoProducts.css';
-import './styles/footer.css';
+import './main.css';
+import './features/landing/styles/cards.css';
+import './features/landing//styles/obi.css';
+import './features/landing//styles/carousel.css';
+import './features/landing//styles/form.css';
+import './features/landing//styles/judoProducts.css';
+import './shared/styles/footer.css';
+import './shared/styles/cart.css'
 
 
 function App() {
   return (
-    <div className="App">
-      <section id="sectionsup">
-        <h1><b>JUDO</b></h1>
-      </section>
-      
-      <Header />
-      
-     
-      
-      <section className="sectioncontent">
-        <ObiSection />
+    <CartProvider>
+      <div className="App">
+        <section id="sectionsup">
+          <h1><b>JUDO</b></h1>
+        </section>
         
-        <BeltCarousel />
-      </section>
-
-      <div className="separation2"/>
-
-      <Form />
-      <br />
-      <div className="separation2"/>
-
-      <ProductProvider>
-        <InformacionProductos />
-      </ProductProvider>
+        <Header />
+        <Cart />
+        
       
-      <Footer />
-    </div>
+        
+        <section className="sectioncontent">
+          <ObiSection />
+          
+          <BeltCarousel />
+        </section>
+
+        <div className="separation2"/>
+
+        <Form />
+        <br />
+        <div className="separation2"/>
+
+        <ProductProvider>
+          <InformacionProductos />
+        </ProductProvider>
+        
+        <Footer />
+      </div>
+    </CartProvider>  
   );
 }
 

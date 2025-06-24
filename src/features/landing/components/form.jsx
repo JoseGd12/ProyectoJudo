@@ -6,7 +6,7 @@ import {
   validatePhone, 
   validateEmail, 
   isFormValid 
-} from '../data/validations';
+} from '../../../shared/utils/validations';
 
 function Form() {
   const [formData, setFormData] = useState({

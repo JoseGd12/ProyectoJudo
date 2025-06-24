@@ -1,4 +1,5 @@
 import jiujibanner from '../assets/images/jiujibanner.png'
+import { CartButton } from '../../features/cart/components/CartButton';
 
 const Header = () => {
   return (
@@ -10,6 +11,7 @@ const Header = () => {
         <li><a href="funct.html">Funcionamiento</a></li>
         <li><a href="judoNiveles.html">Niveles</a></li>
         <li><a href="tecnicas.html">Técnicas</a></li>
+         <CartButton />
       </ul>
 
       <div className="sectionbanner">

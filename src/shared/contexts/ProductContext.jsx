@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from 'react';
-import { judoProducts } from '../data/judoProducts'; // Importa los datos locales
+import { judoProducts } from '../../features/landing/services/judoProducts'; // Importa los datos locales
 
 export const ProductContext = createContext();
 

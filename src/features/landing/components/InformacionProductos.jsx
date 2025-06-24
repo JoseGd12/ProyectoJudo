@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { ProductContext } from '../context/ProductContext';
+import { ProductContext } from '../../../shared/contexts/ProductContext';
 import Products from './Products';
 import '../styles/judoProducts.css'; 
 

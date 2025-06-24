@@ -1,4 +1,4 @@
-import { beltData } from "../data/belts";
+import { beltData } from "../../../features/landing/services/belts";
 import BeltCard from "./BeltCard";
 import { Carousel } from "react-bootstrap";
 import '../styles/carousel.css'; 
