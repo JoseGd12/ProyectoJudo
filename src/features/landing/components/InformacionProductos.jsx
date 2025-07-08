@@ -1,27 +1,38 @@
-import { useContext } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { ProductContext } from '../../../shared/contexts/ProductContext';
 import Products from './Products';
+import  fetchJudoProducts  from '../services/judoProducts';
 import '../styles/judoProducts.css'; 
 
 const InformacionProductos = () => {
-  const { productos, loading, error } = useContext(ProductContext);
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const loadProducts = async () => {
+      try {
+        const data = await fetchJudoProducts();
+        setProducts(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadProducts();
+  }, []);
+
+  if (loading) return <div>Cargando productos...</div>;
+  if (error) return <div>Error: {error}</div>;
 
   return (
-    <section className="judo-products-section">
-      <h2 className="judo-products-title">Productos Disponibles</h2>
-      <div className="separationproducts"></div>
-      <div className="productos-container">
-        {loading ? (
-          <p className="loading-message">Cargando productos...</p>
-        ) : error ? (
-          <p className="error-message">{error}</p>
-        ) : (
-          productos.map((producto) => (
-            <Products key={producto.id} producto={producto} />
-          ))
-        )}
-      </div>
-    </section>
+    <div className="productos-container">
+      {products.map((producto) => (
+        <Products key={producto.id} producto={producto} />
+      ))}
+    </div>
   );
 };
 

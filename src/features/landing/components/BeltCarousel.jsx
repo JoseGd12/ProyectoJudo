@@ -14,7 +14,7 @@ const BeltCarousel = () => {
 
       <div className="carousel-wrapper">
         <Carousel 
-          interval={3000} 
+          interval={null} 
           pause="hover"
           indicators={true}
           nextIcon={<span aria-hidden="true" className="carousel-control-next-icon" />}

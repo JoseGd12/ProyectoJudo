@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useCart } from '../../../features/cart/hooks/CartContext';
 import { useNotification } from '../../../features/cart/hooks/useNotification';
+import Skeleton from 'react-loading-skeleton';
 import Swal from 'sweetalert2';
 
 const Products = ({ producto }) => {
@@ -35,9 +36,16 @@ const Products = ({ producto }) => {
 
   return (
     <div className="producto">
-      <img  src={producto.image} alt={producto.title} width="100" />
-      <h3>{producto.title}</h3>
-      <p>Precio: ${producto.price}</p>
+      {producto.image ? (
+        <img  src={producto.image} alt={producto.title} width="100" />
+
+      ) : (
+        <Skeleton height={100} width={100} />
+      )
+      }
+      
+      <h3>{producto.title || <Skeleton />}</h3>
+      <h3>{producto.title || <Skeleton />}</h3>
       <div className="contador">
         <button onClick={handleDecrement}>-</button>
         <span>{count}</span>

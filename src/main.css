@@ -12,6 +12,30 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
+.sectionorigen{
+    text-align: center;
+    padding: 2%;
+    width: 55%;
+    background: rgba(166, 165, 197, 0);
+    margin-top: 3.6%;
+    margin-left: 22.5%;
+    border-top: 1px solid rgb(53, 50, 139);
+    border-bottom: 1px solid rgb(53, 50, 139);
+    float: left;
+}
+
+#imgjudor{
+    width: 35%;
+    border: 3px solid black;
+    border-radius: 30px;
+    margin-left: 33%;
+}
+
+.sectionorigen h2{
+    padding: 1%;
+    text-align: center;
+}
+
 .sectioncontent {
   display: flex;
   flex-direction: column;
@@ -48,13 +72,14 @@ body{
 
 
 
-
 #sectionsup{
-    padding: 40px;
-    background-color: rgb(48, 48, 127);
+    padding: 10px;
+    background-color: #4f4f88;
     color: white;
     width: 100%;
     float: left;
+    margin-top:0;
+    font-family: system-ui;
 }
 
 #sectionsup h1{
@@ -63,11 +88,18 @@ body{
 
 #nav{
     background: rgb(40, 40, 103);
-    padding: 25px;
+    padding: 50px;
     width: 100%;
-    float: left;
+    margin-top: 150px;
+    
     text-align: center;
 
+}
+#jigoroimg{
+    width: 40%;
+    margin-left: 3%;
+    border: 4px solid black;
+    border-radius: 20%;
 }
 
 .boton1{
@@ -180,10 +212,21 @@ button:active {
 #header{
     background: rgb(40, 40, 103);
     width: 100%;
-    
-    padding-top: 27px;
     float: left;
     color: white;
+    
+}
+
+#header h1{
+    
+    background-color: rgb(40, 40, 103);
+    color: white;
+    width: 100%;
+    float: left;
+    margin-top:0;
+    font-family: system-ui;
+    text-align: left;
+    padding-top: 31px;
     
 }
 
@@ -195,10 +238,104 @@ button:active {
     list-style: none;
     padding: 1%;
     margin: 1%;
+    margin-top: 30px;
     display: inline-block;
     background: #59599b;
     border-radius: 8px;
     
+}
+.inicioBtn{
+    list-style: none;
+    padding: 1%;
+    margin-top: 3%;
+    margin-left: 130px;
+    display: inline-block;
+    background: #59599b;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0);
+
+}
+.inicioBtn .Link{
+    list-style: none;
+    color: White;
+    text-decoration: none;
+    margin: 10px;
+    padding: 19px;
+}
+.inicioBtn .Link:hover{
+    background-color: rgb(56, 56, 139);
+}
+.loginBtn{
+    list-style: none;
+    padding: 1%;
+    margin-left: 10%;
+    margin-right: 1%;
+    background: #59599b;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    font-size: medium;
+    float: left;
+
+}
+.loginBtn .Link{
+    list-style: none;
+    color: White;
+    text-decoration: none;
+    margin: 10px;
+    padding: 19px;
+
+}
+.loginBtn .Link:hover{
+    background-color: rgb(40, 40, 103);
+
+}
+.logoutBtn{
+    list-style: none;
+    padding: 1%;
+    
+    margin-right: 6.6%;
+    background: #59599b;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    font-size: medium;
+    float: left;
+
+}
+.logoutBtn .Link{
+    list-style: none;
+    color: White;
+    text-decoration: none;
+    margin: 10px;
+    padding: 19px;
+
+}
+.logoutBtn .Link:hover{
+    background-color: rgb(40, 40, 103);
+}
+
+.login0Btn{
+    list-style: none;
+    padding: 1%;
+    margin-left: 10%;
+    margin-right: 25.3%;
+    background: #59599b;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    font-size: medium;
+    float: left;
+
+}
+.login0Btn .Link{
+    list-style: none;
+    color: White;
+    text-decoration: none;
+    margin: 10px;
+    padding: 19px;
+
+}
+.login0Btn .Link:hover{
+    background-color: rgb(40, 40, 103);
+
 }
 #header li a{
     list-style: none;
@@ -224,6 +361,7 @@ button:active {
     text-align: center; 
     font-style: oblique;
     text-decoration: underline;
+    font-family: system-ui;
 }
 
 
@@ -374,4 +512,50 @@ height: 4px;
     margin-top: 20%;
     padding-left: 60px;
     float: left;
+}
+
+.sectionjudo{
+    text-align: center;
+    padding: 2%;
+    width: 30%;
+    background: rgba(166, 165, 197, 0);
+    margin-top: 3.6%;
+    margin-left: 34.7%;
+    border-top: 1px solid rgb(53, 50, 139);
+    border-bottom: 1px solid rgb(53, 50, 139);
+    float: left;
+}
+.sectionjudo p{
+    color: black;
+    font-size: 20px;
+    font-family:monospace;
+    text-align: justify;
+   
+}
+
+.sectionfuncion{
+    text-align: center;
+    padding: 2%;
+    width: 55%;
+    background: rgba(166, 165, 197, 0);
+    margin-top: 3.6%;
+    margin-left: 22.5%;
+    border-top: 1px solid rgb(53, 50, 139);
+    border-bottom: 1px solid rgb(53, 50, 139);
+    float: left;
+}
+
+.sectionfuncion p{
+    color: black;
+    font-size: 20px;
+    font-family:monospace;
+    text-align: justify;
+}
+
+.sectionfuncion img{
+    margin-left: 29.5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 3px solid black;
+    border-radius: 30px;
 }

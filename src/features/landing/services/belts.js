@@ -26,7 +26,7 @@ export const beltData = [
     meaning: "Ilusión - Amor",
     image: "src/shared/assets/images/judo3.png",
     bgColor: "rgba(255, 98, 25, 0.9)",
-    textColor: "#333",
+    textColor: "rgb(40, 27, 27)",
     borderColor: "#000"
   },
   {
@@ -36,7 +36,7 @@ export const beltData = [
     meaning: "Esperanza - Fe",
     image: "src/shared/assets/images/judo4.png",
     bgColor: "rgba(59, 170, 34, 0.9)",
-    textColor: "#333",
+    textColor: "rgb(211, 201, 201)",
     borderColor: "#000"
   },
   {
@@ -46,7 +46,7 @@ export const beltData = [
     meaning: "Idealismo",
     image: "src/shared/assets/images/judo5.png",
     bgColor: "rgba(27, 99, 255, 0.9)",
-    textColor: "#333",
+    textColor: "rgb(211, 201, 201)",
     borderColor: "#000"
   },
   {
@@ -56,7 +56,7 @@ export const beltData = [
     meaning: "Iniciación al conocimiento",
     image: "src/shared/assets/images/judo6.png",
     bgColor: "rgba(126, 40, 0, 0.9)",
-    textColor: "#333",
+    textColor: "rgb(211, 201, 201)",
     borderColor: "#000"
   }
 ];
