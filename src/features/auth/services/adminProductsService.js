@@ -1,5 +1,4 @@
-// src/features/auth/services/adminProductsService.js
-const API_URL = 'https://api.escuelajs.co/api/v1/products'; // Cambiar por tu endpoint real
+const API_URL = 'https://api.escuelajs.co/api/v1/products';
 
 export const adminFetchProducts = async () => {
   const response = await fetch(API_URL);

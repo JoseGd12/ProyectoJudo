@@ -1,7 +1,7 @@
-/* Dashboard.css */
+
 .dashboard-container {
   min-height: 100vh;
-  background-color: #acbce4; /* Mismo fondo claro */
+  background-color: #acbce4; 
   padding: 20px;
 }
 
@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #59599b; /* Mismo color del formulario */
+  background-color: #59599b; 
   padding: 20px;
   border-radius: 12px;
   margin-bottom: 30px;

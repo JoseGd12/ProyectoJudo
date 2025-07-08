@@ -1,15 +1,15 @@
-/* Login.css */
+
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 50vh;
-  background-color: #acbce4; /* Fondo claro solicitado */
+  background-color: #acbce4; 
   padding: 20px;
 }
 
 .login-form {
-  background-color: #304085; /* Contenedor oscuro solicitado */
+  background-color: #304085; 
   border-radius: 12px;
   padding: 30px;
   padding-right: 55px;
@@ -88,4 +88,25 @@
   font-size: 14px;
   color: #d1d1ff;
   text-align: center;
+}
+
+/* Estilos existentes... */
+
+/* Agregar estos nuevos estilos al final del archivo */
+.input-error {
+  border-color: #ff6b6b !important;
+  background-color: rgba(255, 107, 107, 0.1) !important;
+}
+
+.field-error {
+  color: #ff9e9e;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  margin-left: 8px;
+}
+
+.login-button:disabled:not(:hover) {
+  background-color: #555;
+  cursor: not-allowed;
+  opacity: 0.7;
 }

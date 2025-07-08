@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useCart } from '../../../features/cart/hooks/CartContext';
 import { useNotification } from '../../../features/cart/hooks/useNotification';
-import Skeleton from 'react-loading-skeleton';
 import Swal from 'sweetalert2';
 
 const Products = ({ producto }) => {
@@ -16,7 +15,10 @@ const Products = ({ producto }) => {
 
   const handleDecrement = () => {
     if (count > 0) setCount(count - 1);
+
   };
+
+  const [imgError, setImgError] = useState(false);
 
   const handleAddToCart = () => {
     if (count <= 0) {
@@ -24,28 +26,26 @@ const Products = ({ producto }) => {
       return;
     }
 
-    // Agregar el producto con la cantidad correcta
+ 
     addItem({
       ...producto,
-      quantity: count // Aquí está el cambio clave
+      quantity: count 
     });
 
     showSuccess(`Agregaste ${count} ${producto.title} al carrito 🛒`);
-    setCount(0); // Resetear el contador después de agregar
+    setCount(0); 
   };
 
   return (
     <div className="producto">
-      {producto.image ? (
-        <img  src={producto.image} alt={producto.title} width="100" />
-
-      ) : (
-        <Skeleton height={100} width={100} />
-      )
-      }
-      
-      <h3>{producto.title || <Skeleton />}</h3>
-      <h3>{producto.title || <Skeleton />}</h3>
+      <img 
+        src={imgError ? '/placeholder-judogi.png' : producto.image} 
+        alt={producto.title} 
+        onError={() => setImgError(true)}
+        className="product-image"
+      />
+      <h3>{producto.title}</h3>
+      <p>Precio: ${producto.price}</p>
       <div className="contador">
         <button onClick={handleDecrement}>-</button>
         <span>{count}</span>

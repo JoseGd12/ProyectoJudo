@@ -1,4 +1,3 @@
-// src/features/auth/components/AdminProductForm.jsx
 import { useState } from 'react';
 import { adminCreateProduct, adminUpdateProduct } from '../services/adminProductsService';
 

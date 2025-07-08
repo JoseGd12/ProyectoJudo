@@ -28,7 +28,7 @@ const Dashboard = () => {
       <div className="dashboard-content">
         <div className="user-info">
           <h2>Información del Usuario</h2>
-          {/* Mostrar avatar si existe */}
+          
           {user?.avatar && (
             <div className="user-avatar">
               <img src={user.avatar} alt={`Avatar de ${user.name}`} />
